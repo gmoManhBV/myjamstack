@@ -30,11 +30,14 @@ export default function Home(props) {
           <div><span>{post.published}</span></div>
         </div>)}
 
+        <div>
+        <h2>APIのサンプル：人のIDによりAPIに叩いてデータを表示されます</h2>
         <ul>
           {data.map((p, i) => (
             <Person key={i} person={p} />
           ))}
         </ul>
+        </div>
 
       <style jsx>{`
         .post-teaser {
